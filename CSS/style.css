@@ -61,6 +61,33 @@ table{
     padding: 20px;
 }
 
+.getsubtotal ul li{
+    margin-left: 500px;
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #252525;
+    overflow: hidden;
+}
+
+.getsubtotal ul li span{
+    font-weight: bold;
+    
+}
+
+.gettotal ul li{
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #252525;
+    overflow: hidden;
+}
+
+.gettotal ul li span{
+    font-weight: bold;
+    
+}
+
 .p-order{
     margin-left: 500px;
     margin-top: 20px;
