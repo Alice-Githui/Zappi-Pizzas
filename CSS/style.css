@@ -1,0 +1,41 @@
+.navbar{
+    background-color: rgb(72, 92, 39);
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+}
+
+.navbar img{
+    float: right;
+    width: 200px;
+    height: 100px;
+}
+.navbar ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.navbar li{
+    float: left;
+    margin-left: 170px;   
+}
+
+.navbar a{
+    color: white;
+}
+
+.navbar a:hover{
+    background-color: tomato;
+    font-size: 18px;
+}
+#desc{
+    text-align: center;
+    align-items: center;
+}
+
+
+.pizza-varieties img{
+    width: 280px;
+    height: 220px;
+}
+
