@@ -1,5 +1,5 @@
 .navbar{
-    background-color:  rgb(72, 92, 39); 
+    background-color: #B73C39 ;/* rgb(72, 92, 39); */
     background-size: cover;
     background-position: center;
     height: 100px;
@@ -46,16 +46,27 @@
 }
 
 .note p{
-    background-color: #0EF15C;
+    background-color: #39B4B7;
 }
+#pizzachoiceoptions{
+    border: .5px black solid;
+    padding: 30px;
+    margin-top: 30px;
+}
+
 .p-order{
     margin-left: 500px;
+    margin-top: 20px;
 }
 #deliverydetails{
-    margin-top: 100px;
+    margin-top: 30px;
+    /*border: 0.5px solid black; */
+    margin-left: 70px;
+    margin-right: 70px;
 }
 .deliveryoptions{
     margin-left: 200px;
+    
 }
 
 #checkout{
