@@ -1,15 +1,15 @@
 .navbar{
-    background-color: rgb(72, 92, 39);
+    background-color:  rgb(72, 92, 39); 
     background-size: cover;
     background-position: center;
     height: 100px;
 }
 
-.navbar img{
+/*.navbar img{
     float: right;
     width: 200px;
     height: 100px;
-}
+} */
 .navbar ul{
     margin: 0px;
     padding: 0px;
@@ -28,6 +28,7 @@
     background-color: tomato;
     font-size: 18px;
 }
+
 #desc{
     text-align: center;
     align-items: center;
@@ -39,3 +40,24 @@
     height: 220px;
 }
 
+.note{
+    text-align: center;
+    text-transform: uppercase;  
+}
+
+.note p{
+    background-color: #0EF15C;
+}
+.p-order{
+    margin-left: 500px;
+}
+#deliverydetails{
+    margin-top: 100px;
+}
+.deliveryoptions{
+    margin-left: 200px;
+}
+
+#checkout{
+    margin-left: 500px;
+}

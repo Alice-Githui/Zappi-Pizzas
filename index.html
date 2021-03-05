@@ -105,13 +105,17 @@
         <div id = "pizzachoiceoptions">
             <div class = "crusts">
                 <p>We offer our pizza crusts in three types as below;</p>
-                <label for= "deepcrust">Deep Crust</label>
-                <input type ="radio" id="deepcrust" value="crust">
-                <label for= "glutenfreepizza">Gluten Free</label>
-                <input type ="radio" id="glutenfreepizza" value="crust">
-                <label for= "thin">Thin</label>
-                <input type ="radio" id="thin" value="crust">
+                <form>
+                    <label for= "deepcrust">Deep Crust</label>
+                    <input type ="radio" id="deepcrust" value="deepcrust" name="crust">
+                    <label for= "glutenfreepizza">Gluten Free</label>
+                    <input type ="radio" id="glutenfreepizza" value="glutenfreepizza" name="crust">
+                    <label for= "thincrust">Thin Crust</label>
+                    <input type ="radio" id="thincrust" value="thincrust" name="crust">
+    
 
+                </form>
+               
                 <div class = "crustsprices">
                     <p><em>Our prices remain the same irregardless of the type of crust chosen</em></p>
     
@@ -121,12 +125,14 @@
 
             <div class = "pizzasize">
                 <p>We offer our pizzas in three sizes as below;</p>
-                <label for= "largepizza">Large</label>
-                <input type ="radio" id="largepizza" value="pizza">
-                <label for= "mediumpizza">Meduim</label>
-                <input type ="radio" id="mediumpizza" value="pizza">
-                <label for= "smallpizza">Small</label>
-                <input type ="radio" id="smallpizza" value="pizza">   
+                <form>
+                    <label for= "largepizza">Large</label>
+                    <input type ="radio" id="largepizza" value="largepizza" name="pizza">
+                    <label for= "mediumpizza">Meduim</label>
+                    <input type ="radio" id="mediumpizza" value="mediumpizza" name="pizza">
+                    <label for= "smallpizza">Small</label>
+                    <input type ="radio" id="smallpizza" value="smallpizza" name="pizza"> 
+                </form>                 
                 
                 <div class = "extrapizzaprices">
                     <p>A large pizza will cost an extra <strong><span class = "largepizzaprice">Kshs. 400</span></strong> more than the medium-sized pizza</p>
@@ -160,10 +166,14 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class ="deliveryoptions">
+                        <form>
                         <label for ="delivery">Delivery</label>
-                        <input type="radio" id= "delivery" value="delivery">
+                        <input type="radio" id= "delivery" value="delivery" name="delivery">
                         <label for ="pick-up">In-house pick up</label>
-                        <input type="radio" id= "pick-up" value="pick-up">
+                        <input type="radio" id= "pick-up" value="pick-up" name="delivery">
+
+                        </form>
+                        
             
                     </div>            
 
@@ -171,12 +181,15 @@
 
                 <div class="col-md-6">
                     <div class ="deliveryprices">
-                        <label for ="firstdistance">Less than 10km</label>
-                        <input type="radio" id= "firstdistance" value="delivery">
-                        <label for ="seconddistance">Over 10km - 15km radius</label>
-                        <input type="radio" id= "seconddistance" value="delivery">
-                        <label for ="thirddistance">Over 15km</label>
-                        <input type="radio" id= "thirddistance" value="delivery">
+                        <form>
+                            <label for ="firstdistance">Less than 10km</label>
+                            <input type="radio" id= "firstdistance" value="firstdistance" name ="distance">
+                            <label for ="seconddistance">Over 10km - 15km radius</label>
+                            <input type="radio" id= "seconddistance" value="seconddistance" name="distance">
+                            <label for ="thirddistance">Over 15km</label>
+                            <input type="radio" id= "thirddistance" value="thirddistance" name="distance">
+                        </form>
+                       
             
                     </div>       
                 </div>
