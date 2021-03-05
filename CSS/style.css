@@ -54,6 +54,13 @@
     margin-top: 30px;
 }
 
+table{
+    border: black 1px solid;
+    margin-top: 15px;
+    margin-left: 250px;
+    padding: 20px;
+}
+
 .p-order{
     margin-left: 500px;
     margin-top: 20px;

@@ -181,7 +181,7 @@
                         <td>Beef Bonanza</td>
                         <td>Kshs. 1,300.00</td>
                         <td>
-                            <input type="number" class="input" min="1" max="15" required>
+                            <input type="number" class="input" min="1" max="">
                         </td>
                         <td>Kshs. 1,300.00</td>
                     </tr>
@@ -189,7 +189,7 @@
                         <td>Boerewors</td>
                         <td>Kshs. 1,400.00</td>
                         <td>
-                            <input type="number" class="input" min="1" max="15" required>
+                            <input type="number" class="input" min="1" max="">
                         </td>
                         <td>Kshs. 1,400.00</td>
                     </tr>
@@ -197,7 +197,7 @@
                         <td>Chicken Mushroom</td>
                         <td>Kshs. 1,450.00</td>
                         <td>
-                            <input type="number" class="input" min="1" max="15" required>
+                            <input type="number" class="input" min="1" max="">
                         </td>
                         <td>Kshs. 1,450.00</td>
                     </tr>
@@ -205,7 +205,7 @@
                         <td>Chicken Tikka</td>
                         <td>Kshs. 1,300.00</td>
                         <td>
-                            <input type="number" class="input" min="1" max="15" required>
+                            <input type="number" class="input" min="1" max="">
                         </td>
                         <td>Kshs. 1,300.00</td>
                     </tr>
@@ -213,7 +213,7 @@
                         <td>Ham and Beef</td>
                         <td>Kshs. 1,290.00</td>
                         <td>
-                            <input type="number" class="input" min="1" max="15" required>
+                            <input type="number" class="input" min="1" max="">
                         </td>
                         <td>Kshs. 1,290.00</td>
                     </tr>
@@ -221,7 +221,7 @@
                         <td>Hawaiian</td>
                         <td>Kshs. 1,350.00</td>
                         <td>
-                            <input type="number" class="input" min="1" max="15" required>
+                            <input type="number" class="input" min="1" max="">
                         </td>
                         <td>Kshs. 1,350.00</td>
                     </tr>
@@ -229,7 +229,7 @@
                         <td>Neopolitan</td>
                         <td>Kshs. 1,500.00</td>
                         <td>
-                            <input type="number" class="input" min="1" max="15" required>
+                            <input type="number" class="input" min="1" max="">
                         </td>
                         <td>Kshs. 1,500.00</td>
                     </tr>
@@ -237,18 +237,26 @@
                         <td>Vegeterian</td>
                         <td>Kshs. 1,500.00</td>
                         <td>
-                            <input type="number" class="input" min="1" max="15" required>
+                            <input type="number" class="input" min="1" max="">
                         </td>
                         <td>Kshs. 1,500.00</td>
                     </tr>
                 </tbody>
 
             </table>
-        </div>
-        
+        </div>      
      
         <div class="p-order">
+            <div class="gettotal">
+                <ul>
+                    <li>Sub-Total<span>Kshs. 4,000.00</span></li>
+                </ul>
+
+            </div>
             <button type="submit" class= "btn btn-success" id="placeorder">Place Order</button>
+            <div>
+                <a href="#checkout">Proceed to Checkout</a>
+            </div>
         </div>
         <div id="deliverydetails">
             <div class="row">
@@ -271,11 +279,11 @@
                     <div class ="deliveryprices">
                         <form>
                             <label for ="firstdistance">Less than 10km</label>
-                            <input type="radio" id= "firstdistance" value="firstdistance" name ="distance">
+                            <input type="radio" id= "firstdistance" value="firstdistance" name ="distance" required>
                             <label for ="seconddistance">Over 10km - 15km radius</label>
-                            <input type="radio" id= "seconddistance" value="seconddistance" name="distance">
+                            <input type="radio" id= "seconddistance" value="seconddistance" name="distance" required>
                             <label for ="thirddistance">Over 15km</label>
-                            <input type="radio" id= "thirddistance" value="thirddistance" name="distance">
+                            <input type="radio" id= "thirddistance" value="thirddistance" name="distance" required>
                         </form>
                        
             
