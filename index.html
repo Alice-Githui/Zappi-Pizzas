@@ -13,9 +13,9 @@
         <div class ="navbar">
             <nav>
                 <ul>
-                    <li> </li>
-                    <li> </li>
-                    <li> </li>
+                    <li>About </li>
+                    <li>Build Your Pizza </li>
+                    <li>Delivery Details </li>
                 </ul>                
             </nav>
         </div>
@@ -27,6 +27,9 @@
                 <span>Order Your Pizza Today!!!</span>
             </p>
 
+        </div>
+        <div class= "note">
+            <p><strong>Please Note that the prices below are for our standard medium sized pizzas;</strong></p>
         </div>
         <div class = "pizza-varieties">
             <div class= "row">
@@ -94,16 +97,7 @@
 
         </div>
 
-        <div>
-            <div class = "pizzasize">
-                <p>We offer our pizzas in three sizes as below;</p>
-                <label for= "largepizza">Large</label>
-                <input type ="radio" id="largepizza" value="pizza">
-                <label for= "mediumpizza">Meduim</label>
-                <input type ="radio" id="mediumpizza" value="pizza">
-                <label for= "smallpizza">Small</label>
-                <input type ="radio" id="smallpizza" value="pizza">                
-            </div>
+        <div id = "pizzachoiceoptions">
             <div class = "crusts">
                 <p>We offer our pizza crusts in three types as below;</p>
                 <label for= "deepcrust">Deep Crust</label>
@@ -111,25 +105,86 @@
                 <label for= "glutenfreepizza">Gluten Free</label>
                 <input type ="radio" id="glutenfreepizza" value="crust">
                 <label for= "thin">Thin</label>
-                <input type ="radio" id="thin" value="crust">   
+                <input type ="radio" id="thin" value="crust">
 
+                <div class = "crustsprices">
+                    <p><em>Our prices remain the same irregardless of the type of crust chosen</em></p>
+    
+                </div>
+    
+            </div>
+
+            <div class = "pizzasize">
+                <p>We offer our pizzas in three sizes as below;</p>
+                <label for= "largepizza">Large</label>
+                <input type ="radio" id="largepizza" value="pizza">
+                <label for= "mediumpizza">Meduim</label>
+                <input type ="radio" id="mediumpizza" value="pizza">
+                <label for= "smallpizza">Small</label>
+                <input type ="radio" id="smallpizza" value="pizza">   
+                
+                <div class = "extrapizzaprices">
+                    <p>A large pizza will cost an extra <strong><span class = "largepizzaprice">Kshs. 400</span></strong> more than the medium-sized pizza</p>
+                    <p>A small pizza will cost <strong><span class ="smallpizzaprice">Kshs. 350</span></strong> less than the medium-sized pizza</p>
+                </div>
+                
             </div>
             <div class="toppings">
+                <div class ="extratoppingprices">
+                    <p>All toppings are <span>Kshs.300</span> extra.</p>    
+                </div>
                 <p>We offer our pizza toppings in the varieties below;</p>
-                <select>
-                    <option value = "cheese" id="extracheese">Extra Cheese</option>
-                    <option value = "bacon" id="bacon">Bacon</option>
-                    <option value = "mushrooms" id="mushrooms">Mushrooms</option>
-                    <option value = "sundriedtomatoes" id="sundriedtomatoes">Sun-Dried Tomatoes</option>
-                    <option value = "sausages" id="sausages">Sausages</option>
-                    <option value = "vegancheese" id="vegancheese">Extra Vegan Cheese</option>
-                </select>
-            </div>
+                
+                    <select>
+                        <option value = "cheese" id="extracheese">Extra Cheese</option>
+                        <option value = "bacon" id="bacon">Bacon</option>
+                        <option value = "mushrooms" id="mushrooms">Mushrooms</option>
+                        <option value = "sundriedtomatoes" id="sundriedtomatoes">Sun-Dried Tomatoes</option>
+                        <option value = "sausages" id="sausages">Sausages</option>
+                        <option value = "vegancheese" id="vegancheese">Extra Vegan Cheese</option>
+                    </select>
+                </div>                                                     
+            </div>          
+
+           
         </div>
         <div class="p-order">
             <button type="submit" class= "btn btn-success" id="placeorder">Place Order</button>
         </div>
+        <div id="deliverydetails">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class ="deliveryoptions">
+                        <label for ="delivery">Delivery</label>
+                        <input type="radio" id= "delivery" value="delivery">
+                        <label for ="pick-up">In-house pick up</label>
+                        <input type="radio" id= "pick-up" value="pick-up">
+            
+                    </div>            
 
+                </div>
+
+                <div class="col-md-6">
+                    <div class ="deliveryprices">
+                        <label for ="firstdistance">Less than 10km</label>
+                        <input type="radio" id= "firstdistance" value="delivery">
+                        <label for ="seconddistance">Over 10km - 15km radius</label>
+                        <input type="radio" id= "seconddistance" value="delivery">
+                        <label for ="thirddistance">Over 15km</label>
+                        <input type="radio" id= "thirddistance" value="delivery">
+            
+                    </div>       
+                </div>
+            </div>
+        </div>
+        <div class ="checkout">
+            <div class ="checkoutbutton">
+                <button class ="btn btn-danger">Checkout</button>
+
+            </div>
+
+        </div>
+        
     </div>
     
     <script src = "https://code.jquery.com/jquery-3.5.1.js"></script> <!--jQuery CDN link linked at the bottom of the page so it is read after the rest of the page loads-->
