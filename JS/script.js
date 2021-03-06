@@ -39,6 +39,11 @@ $(".table").click(function(event){
     let inputtedpizzaType = $("input.input").val()
     
 })
+//allow the client to customize their pizza depending on the pizza chosen
+$(".pizza-type").click(function(){
+    $("#pizzachoiceoptions").show() 
+})
+
 
 //On clicking the delivery option, the client will input their delivery location
 $("#delivery").click(function(event){

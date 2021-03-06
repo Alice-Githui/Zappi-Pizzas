@@ -112,3 +112,9 @@ table{
 .deliverycosts{
     display:none;
 }
+
+/*make the type of the price of the pizza clickable */
+
+#pizzachoiceoptions{
+    display: none;
+} 
