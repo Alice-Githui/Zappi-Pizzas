@@ -226,7 +226,7 @@
                         <form>
                             <label for= "largepizza">Large</label>
                             <input type ="radio" id="largepizza" value="largepizza" name="pizza">
-                            <label for= "mediumpizza">Meduim</label>
+                            <label for= "mediumpizza">Medium</label>
                             <input type ="radio" id="mediumpizza" value="mediumpizza" name="pizza">
                             <label for= "smallpizza">Small</label>
                             <input type ="radio" id="smallpizza" value="smallpizza" name="pizza"> 
@@ -282,7 +282,7 @@
         </div>
         <div id="deliverydetails">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-8">
                     <div class ="deliveryoptions">
                         <form>
                         <label for ="delivery">Delivery</label>
@@ -290,13 +290,22 @@
                         <label for ="pick-up">In-house pick up</label>
                         <input type="radio" id= "pick-up" value="pick-up" name="delivery">
 
-                        </form>                      
+                        </form>                    
             
-                    </div>            
+                    </div>   
+                    <div class = "checkdeliverylocation">
+                       <form>
+                           <label for="enterlocation">Enter Your Location</label>
+                           <input type="text" id="enterlocation" value=" ">
+                       </form>
+
+                       <button type="submit" class="submit">Enter</button>
+                    
+                    </div>         
 
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class ="deliveryprices">
                         <form>
                             <label for ="firstdistance">Less than 10km</label>

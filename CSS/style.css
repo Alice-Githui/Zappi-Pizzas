@@ -102,6 +102,9 @@ table{
     margin-left: 200px;
     
 }
+.checkdeliverylocation{
+    display: none;
+}
 
 #checkout{
     margin-left: 500px;
