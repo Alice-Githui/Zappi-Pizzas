@@ -39,6 +39,13 @@ $(".table").click(function(event){
     let inputtedpizzaType = $("input.input").val()
     
 })
+//function that calculates the price of medium pizzas depending on the number pizzas
+/*function subTotalPrice(){
+    firstValue = document.getElementbyClass("input").val
+    secondValue = document.getElementbyClass("pizzaprice").val
+    document.getElementbyId("getfirstsubtotal") = firstValue * secondValue
+} */
+
 //allow the client to customize their pizza depending on the pizza chosen
 $(".pizza-type").click(function(){
     $("#pizzachoiceoptions").show() 

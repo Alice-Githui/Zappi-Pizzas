@@ -204,7 +204,7 @@
         </div>  -->
         <div class="getsubtotal">
             <ul>
-                <li>Sub-Total:<span> Kshs. 4,000.00</span></li>
+                <li>Sub-Total:<span id ="getfirstsubtotal"> </span></li>
             </ul>
 
         </div>    
@@ -319,13 +319,13 @@
                 <div class="col-md-4">
                     <div class ="deliveryprices">
                         <form>
-                            <label for ="firstdistance">Less than 10km</label>
+                            <label for ="firstdistance">Less than 10km radius</label>
                             <input type="radio" id= "firstdistance" value="firstdistance" name ="distance" required>
                             <span id ="deliverycosts1">Kshs. 250</span>
                             <label for ="seconddistance">Over 10km - 15km radius</label>
                             <input type="radio" id= "seconddistance" value="seconddistance" name="distance" required>
                             <span id = "deliverycosts2">Kshs. 300</span>
-                            <label for ="thirddistance">Over 15km</label>
+                            <label for ="thirddistance">Over 15km radius</label>
                             <input type="radio" id= "thirddistance" value="thirddistance" name="distance" required>
                             <span id = "deliverycosts3">Kshs. 450</span>
                         </form>

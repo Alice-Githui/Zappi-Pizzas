@@ -108,6 +108,8 @@ table{
 
 #checkout{
     margin-left: 500px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 .deliverycosts{
     display:none;
@@ -118,3 +120,26 @@ table{
 #pizzachoiceoptions{
     display: none;
 } 
+
+#deliverydetails{
+    /*border: 1px solid black; */
+    height: 150px;
+}
+
+.deliveryoptions{
+    margin-top: 15px;
+}
+.checkdeliverylocation{
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
+#deliverydetails button{
+    margin-left: 300px;
+    margin-top: 15px;
+}
+
+.deliveryprices input{
+    margin: 10px;
+    padding:10px;
+}
