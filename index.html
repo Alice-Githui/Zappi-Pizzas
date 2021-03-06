@@ -41,6 +41,7 @@
                 <div class= "col-md-3">
                     <div class="beefbonanzapizza">
                         <img src="Images/Types of pizzas/beefbonanza.webp" alt="image of a pizza sliced in the middle into eight slices">
+                        <p><span class = "pizza-type">Beef Bonanza Pizza</span></p>
                         <p><span class="pizzaprice">Kshs. 1,300.00</span></p>
                     </div>
 
@@ -49,6 +50,7 @@
                 <div class= "col-md-3">
                     <div class="boerewors">
                         <img src="Images/Types of pizzas/boerewors.webp" alt="image of a pizza with boerewors topping">
+                        <p><span class = "pizza-type">Boerewors Pizza</span></p>
                         <p><span class="pizzaprice">Kshs. 1,400.00</span></p>
                     </div>
 
@@ -57,6 +59,7 @@
                 <div class= "col-md-3">
                     <div class="c-mushroom">
                         <img src="Images/Types of pizzas/chickenmushroom.webp" alt="image of a pizza with mushroom topping">
+                        <p><span class = "pizza-type">Chicken Mushroom</span></p>
                         <p><span class="pizzaprice">Kshs. 1,450.00</span></p>
                     </div>
 
@@ -65,6 +68,7 @@
                 <div class= "col-md-3">
                     <div class="ctikka">
                         <img src="Images/Types of pizzas/ctikka.jpeg" alt="image of a pizza">
+                        <p><span class = "pizza-type">Chicken Tikka</span></p>
                         <p><span class="pizzaprice">Kshs. 1,300.00</span></p>
                     </div>
                 </div>                
@@ -76,24 +80,28 @@
                 <div class= "col-md-3">
                     <div class="hambeef">
                         <img src="Images/Types of pizzas/hambeef.jpg" alt="image of a pizza with beef toppings">
+                        <p><span class = "pizza-type">Ham & Beef</span></p>
                         <p><span class="pizzaprice">Kshs. 1,290.00</span></p>
                     </div>
                 </div>
                 <div class= "col-md-3">
                     <div class="hawaiaan">
                         <img src="Images/Types of pizzas/hawaiian.jpg" alt="image of a pizza with pineapple toppings">
+                        <p><span class = "pizza-type">Hawaiian</span></p>
                         <p><span class="pizzaprice">Kshs. 1,350.00</span></p>
                     </div>
                 </div>
                 <div class= "col-md-3">
                     <div class="neopolitan">
                         <img src="Images/Types of pizzas/neopolitan.jpg" alt="image of a pizza with vegetable and meat toppings">
+                        <p><span class = "pizza-type">Neopolitan</span></p>
                         <p><span class="pizzaprice">Kshs. 1,500.00</span></p>
                     </div>
                 </div>
                 <div class= "col-md-3">
                     <div class="vegetarian">
                         <img src="Images/Types of pizzas/vegeterian.jpg" alt="image of a pizza with vegetable toppings">
+                        <p><span class = "pizza-type">Vegeterian</span></p>
                         <p><span class="pizzaprice">Kshs. 1,500.00</span></p>
                     </div>
                 </div>
@@ -236,15 +244,21 @@
                             <p>All toppings are <span>Kshs.300</span> extra.</p>    
                         </div>
                         <p>We offer our pizza toppings in the varieties below;</p>
-                        
-                            <select>
-                                <option value = "cheese" id="extracheese">Extra Cheese</option>
-                                <option value = "bacon" id="bacon">Bacon</option>
-                                <option value = "mushrooms" id="mushrooms">Mushrooms</option>
-                                <option value = "sundriedtomatoes" id="sundriedtomatoes">Sun-Dried Tomatoes</option>
-                                <option value = "sausages" id="sausages">Sausages</option>
-                                <option value = "vegancheese" id="vegancheese">Extra Vegan Cheese</option>
-                            </select>
+                        <div>
+                            <form>
+                                <label for = "extracheese">Extra Cheese</label>
+                                <input type ="checkbox" id="extracheese" value="extracheese" name="extracheese">
+                                <label for = "bacon">Bacon</label>
+                                <input type ="checkbox" id="bacon" value="bacon" name="bacon">
+                                <label for = "mushrooms">Mushrooms</label>
+                                <input type ="checkbox" id="mushrooms" value="mushrooms" name="mushrooms">
+                                <label for = "sundriedtomatoes">Sun-Dried Tomatoes</label>
+                                <input type ="checkbox" id="sundriedtomatoes" value="sundriedtomatoes" name="sundriedtomatoes">
+                                <label for = "sausages">Sausages</label>
+                                <input type ="checkbox" id="sausages" value="sausages" name="sausages">
+                                <label for = "vegancheese">Extra Vegan Cheese</label>
+                                <input type ="checkbox" id="vegancheese" value="vegancheese" name="vegancheese">
+                            </form>                                           
                         </div>                                                     
                     </div>          
                 </div>
@@ -286,10 +300,13 @@
                         <form>
                             <label for ="firstdistance">Less than 10km</label>
                             <input type="radio" id= "firstdistance" value="firstdistance" name ="distance" required>
+                            <span id ="deliverycosts1">Kshs. 250</span>
                             <label for ="seconddistance">Over 10km - 15km radius</label>
                             <input type="radio" id= "seconddistance" value="seconddistance" name="distance" required>
+                            <span id = "deliverycosts2">Kshs. 300</span>
                             <label for ="thirddistance">Over 15km</label>
                             <input type="radio" id= "thirddistance" value="thirddistance" name="distance" required>
+                            <span id = "deliverycosts3">Kshs. 450</span>
                         </form>
                        
             
