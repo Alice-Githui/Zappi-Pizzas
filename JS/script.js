@@ -19,9 +19,7 @@ $(".table").click(function(event){
     event.preventDefault();
 
     let inputtedpizzaType = $("input.input").val()
-    let inputtedpizzaSize = function(){
-
-    }
+    
 })
 
 //The client is able to see their delivery costs once they enter the distance 
