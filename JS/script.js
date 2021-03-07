@@ -1,14 +1,7 @@
 //business logic
 //the total price of the pizza will be based on price of pizza, price of toppings and cost of delivery 
 
-/*function newPizzaOrder(pizzatype, pizzaSize, crustType){
-    this.pizzaType = pizzaType;
-    this.pizzaSize = pizzaSize;
-    this.crustType = crustType;
-    this.choiceToppings = []
-} */
-
-function NewPizzaOrder(pizzaType){
+/*function PizzaOrder(pizzaType){
     this.pizzaType = pizzaType;
     this.pizzaOptions = [];
 }
@@ -18,6 +11,19 @@ function PizzaOption(pizzaSize, crustType, choiceToppings){
     this.crustType = crustType;
     this.choiceToppings = choiceToppings;
 }
+
+NewPizzaOrder.prototype.pizzaOrders = function(){return this.pizzaType + " " + this.pizzaOptions}
+
+$('#placeorder').click(function(event){
+    event.preventDefault();
+    let inputtedPizzaType = $(".pizzacheckbox input").val()
+    let inputtedCrustType = $(".crusts input").val()
+    let inputtedChoiceToppings = $("form.optionals").val()
+
+    let newPizzaOrder = new PizzaOrder(inputtedPizzaType, inputtedCrustType, inputtedChoiceToppings);
+    $("ul#orderbasket").append("<span class = 'order'>" +newPizzaOrder.pizzaOrders() + "</span>")
+}); */
+
 
 //to check if our constructors are functioning
 /*
@@ -40,31 +46,25 @@ $(".pizzacheckbox").click(function(){
     $(".pizzasize").show()
 })
 
-
-$(".optionalsize").click(function(){
+$(".optionalsize").click(function getTotalOne(){
     var getSubTotal = 0;
     $('.optionalsize:checked').each(function(){
-      getSubTotal += parseInt($(this).val())
+      getSubTotal = parseInt($(this).val())
     })
     $("#getfirstsubtotal").html('Kshs.' + getSubTotal)
-})
+}) 
 
 //calculate the total prices based on the number of pizzas chosen
-/*function calculateThisPrice(){
-    var price = parseInt(getElementByClass("pizza-price").val())
-    var quantity = getElementByClass("itemquantity").val();
 
-    document.getElementById("getfirstsubtotal").val() = (price*quantity)
-}  */
 
 //calculate the total price of the additional toppings chosen
 
-$(".optionals").click(function(){
+$(".optionals").click(function getTotalTwo(){
     var getTotal = 0;
     $('.optionals:checked').each(function(){
         getTotal += parseInt($(this).val())
     })
-    $(".gettotal").html('Kshs.' + getTotal)
+    $("#gettotal").html('Kshs.' + getTotal)
 })
 
 
@@ -98,7 +98,7 @@ $("#thirddistance").click(function(event){
 
 //Client is able to add their delivery costs to their location
 
-$(".d-distance").click(function(){
+$(".d-distance").click(function getTotalThree(){
     var getDeliveryPrices= 0;
     $('.d-distance:checked').each(function(){
       getDeliveryPrices += parseInt($(this).val())
@@ -108,6 +108,10 @@ $(".d-distance").click(function(){
 
 //The client is able to get their total price on checkout
 
-$(".btn btn-danger").submit(function(){
-   document.getElementById("getfinalprice").innerHTML = (getSubTotal + getTotal + getDeliveryPrices)
-})
+function getAllCosts(){
+    var getFinalPrice = getTotalOne() + getTotalTwo() + getTotalThree();
+
+    document.getElementById("getfinalprice").innerHTML = "Your total cost is Kshs."+  getFinalPrice
+
+} 
+

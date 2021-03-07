@@ -59,7 +59,7 @@
 .pizzacheckbox input{
     margin: 30px;
 }
-
+ 
 #pizzachoiceoptions{
     border: 0.5px solid black;
     padding: 30px;
@@ -73,11 +73,11 @@
 }
 
 .pizzasize p{
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .itemquantity{
-    width: 200px;
+    width: 50px;
 }
 
 
@@ -125,10 +125,19 @@
 .checkdeliverylocation{
     display: none;
 }
-
 #checkout{
-    margin-left: 500px;
-    margin-top: 20px;
+    display: flex;
+}
+
+#basket input{
+    width: 400px;
+    margin-left: 80px;
+    
+}
+
+#checkout button{
+    margin-left: 50px;
+    margin-top: 10px;
     margin-bottom: 30px;
 }
 .deliverycosts{

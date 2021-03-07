@@ -106,12 +106,13 @@
         </div>
         </div>
 
+        <div id ="choicepizza">
         <div class = "row">
             <div class ="col-md-6">
                 <p><strong>Choose Your Pizza below;</strong></p>
                 <form class = "pizzacheckbox">
                     <label for = "beefbonanzapizza">Beef Bonanza Pizza</label>
-                    <input type ="checkbox" id="beefbonanzapizza" name=" ">
+                    <input type ="checkbox" id="beefbonanzapizza" name=" ">           
                    <!-- Qty:<input type="number" class="itemquantity" min="0" max=""> -->
                     <label for = "boerewors">Boerewors Pizza</label>
                     <input type ="checkbox" id="boerewors" name=" ">
@@ -133,21 +134,18 @@
         <div class ="col-md-6">
             <div class = "pizzasize">
                 <p>We offer our pizzas in three sizes as below;</p>
-                <form onsubmit="calculateThisPrice()">
+                <form class="pizzasize">
                     <label for= "largepizza">Large</label>                    
                     <input type ="radio" id="largepizza" class = "optionalsize" value="1900" name="pizza"> 
                     <p>Kshs.<span class = "pizza-price">1,900.00</span></p>                   
-                    Qty:<input type="number" class="itemquantity" min="0" max="">
                     <br>
                     <label for= "mediumpizza">Medium</label>
                     <input type ="radio" id="mediumpizza" class = "optionalsize" value="1500" name="pizza"> 
                     <p>Kshs.<span class = "pizza-price">1,500.00</span></p>
-                    Qty:<input type="number" class="itemquantity" min="0" max="">
                     <br>
                     <label for= "smallpizza">Small</label>
                     <input type ="radio" id="smallpizza" class="optionalsize" value="1200" name="pizza"> 
                     <p>Kshs.<span class = "pizza-price">1,200.00</span></p>
-                    Qty:<input type="number" class="itemquantity" min="0" max="">
                 </form>                 
                 
             </div>
@@ -293,11 +291,12 @@
 
             </div>                
         </div> 
+        </div>
      
         <div class="p-order">
             <div class="gettotal">
                 <ul>
-                    <li>Sub-Total 2:<span> </span></li>
+                    <li>Sub-Total 2:<span id = "gettotal"> </span></li>
                 </ul>
 
             </div>
@@ -308,7 +307,7 @@
         </div>
         <div id="deliverydetails">
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-8">
                     <div class ="deliveryoptions">
                         <form>
                         <label for ="delivery">Delivery</label>
@@ -322,8 +321,7 @@
                     <div class = "checkdeliverylocation">
                        <form>
                            <label for="enterlocation">Enter Your Location</label>
-                           <input type="text" id="enterlocation" value=" ">
-                       </form>
+                           <input type="text" id="enterlocation" value="">
 
                        <button type="submit" class="submit">Enter</button>
                     
@@ -331,7 +329,7 @@
 
                 </div>
 
-                <div class="col-md-5">
+                <div class="col-md-4">
                     <div class ="deliveryprices">
                         <form>
                             <label for ="firstdistance">Less than 10km radius</label>
@@ -354,13 +352,17 @@
                 </div>
             </div>
         </div>
+
         <div id ="checkout">
+            <div id ="basket">
+                <label for ="orderbasket">Your Orders:</label>
+                <input type= " " name="orderbasket" value="" id="orderbasket">
+            </div>
+            
             <div class ="checkoutbutton">
                 <button class ="btn btn-danger" type="submit">Checkout</button>
             </div>
-            <p id = "getfinalprice">
-                <span>Your Total Price is:</span>
-            </p>
+            <p><span id = "getfinalprice"></span>  </p>
 
         </div>
      
