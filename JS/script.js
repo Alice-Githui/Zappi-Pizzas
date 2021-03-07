@@ -40,15 +40,26 @@ $(".table").click(function(event){
     
 })
 //function that calculates the price of medium pizzas depending on the number pizzas
-/*function subTotalPrice(){
-    firstValue = document.getElementbyClass("input").val
-    secondValue = document.getElementbyClass("pizzaprice").val
-    document.getElementbyId("getfirstsubtotal") = firstValue * secondValue
-} */
+
+
+
+
+//console.log(subTotalPrice) 
+
 
 //allow the client to customize their pizza depending on the pizza chosen
 $(".pizza-type").click(function(){
     $("#pizzachoiceoptions").show() 
+})
+
+//calculate the total price of the additional toppings chosen
+
+$(".optionals").click(function(){
+    var gettotal = 0;
+    $('.optionals:checked').each(function(){
+        gettotal += parseInt($(this).val())
+    })
+    $(".gettotal").html('Kshs.' + gettotal)
 })
 
 

@@ -45,8 +45,9 @@
                     <div class="beefbonanzapizza">
                         <img src="Images/Types of pizzas/beefbonanza.webp" alt="image of a pizza sliced in the middle into eight slices">
                         <p><span class = "pizza-type">Beef Bonanza Pizza</span></p> 
-                        <input type="number" class="input" min="0" max="">
-                        <p><span class="pizzaprice">Kshs. 1,300.00</span></p>
+                        Qty:<input type="number" class="itemquantity" min="0" max="">
+                        <p><span class="pizzaprice">1,300.00</span></p>
+                        <input type="button" onclick="javascript:calculateText();" value="add to cart" />    
                     </div>
 
                 </div>
@@ -55,7 +56,7 @@
                     <div class="boerewors">
                         <img src="Images/Types of pizzas/boerewors.webp" alt="image of a pizza with boerewors topping">
                         <p><span class = "pizza-type">Boerewors Pizza</span></p>
-                        <input type="number" class="input" min="0" max="">
+                        Qty:<input type="number" class="input" min="0" max="">
                         <p><span class="pizzaprice">Kshs. 1,400.00</span></p>
                     </div>
 
@@ -65,7 +66,7 @@
                     <div class="c-mushroom">
                         <img src="Images/Types of pizzas/chickenmushroom.webp" alt="image of a pizza with mushroom topping">
                         <p><span class = "pizza-type">Chicken Mushroom</span></p>
-                        <input type="number" class="input" min="0" max="">
+                        Qty:<input type="number" class="input" min="0" max="">
                         <p><span class="pizzaprice">Kshs. 1,450.00</span></p>
                     </div>
 
@@ -75,21 +76,21 @@
                     <div class="ctikka">
                         <img src="Images/Types of pizzas/ctikka.jpeg" alt="image of a pizza">
                         <p><span class = "pizza-type">Chicken Tikka</span></p>
-                        <input type="number" class="input" min="0" max="">
+                        Qty:<input type="number" class="input" min="0" max="">
                        <p><span class="pizzaprice">Kshs. 1,300.00</span></p>
                     </div>
                 </div>                
             </div>
 
         </div>
-        </div>
+        
         <div class = "pizza-varieties">
             <div class= "row">
                 <div class= "col-md-3">
                     <div class="hambeef">
                         <img src="Images/Types of pizzas/hambeef.jpg" alt="image of a pizza with beef toppings">
                         <p><span class = "pizza-type">Ham & Beef</span></p>
-                        <input type="number" class="input" min="0" max="">
+                        Qty:<input type="number" class="input" min="0" max="">
                         <p><span class="pizzaprice">Kshs. 1,290.00</span></p>
                     </div>
                 </div>
@@ -97,7 +98,7 @@
                     <div class="hawaiaan">
                         <img src="Images/Types of pizzas/hawaiian.jpg" alt="image of a pizza with pineapple toppings">
                         <p><span class = "pizza-type">Hawaiian</span></p>
-                        <input type="number" class="input" min="0" max="">
+                        Qty:<input type="number" class="input" min="0" max="">
                         <p><span class="pizzaprice">Kshs. 1,350.00</span></p>
                     </div>
                 </div>
@@ -105,7 +106,7 @@
                     <div class="neopolitan">
                         <img src="Images/Types of pizzas/neopolitan.jpg" alt="image of a pizza with vegetable and meat toppings">
                         <p><span class = "pizza-type">Neopolitan</span></p>
-                        <input type="number" class="input" min="0" max="">
+                        Qty:<input type="number" class="input" min="0" max="">
                         <p><span class="pizzaprice">Kshs. 1,500.00</span></p>
                     </div>
                 </div>
@@ -113,13 +114,14 @@
                     <div class="vegetarian">
                         <img src="Images/Types of pizzas/vegeterian.jpg" alt="image of a pizza with vegetable toppings">
                         <p><span class = "pizza-type">Vegeterian</span></p>
-                        <input type="number" class="input" min="0" max="">
+                        Qty:<input type="number" class="input" min="0" max="">
                         <p><span class="pizzaprice">Kshs. 1,500.00</span></p>
                     </div>
                 </div>
 
             </div>
 
+        </div>
         </div>
 
        <!-- <div class ="table">
@@ -236,11 +238,11 @@
                         <p>We offer our pizzas in three sizes as below;</p>
                         <form>
                             <label for= "largepizza">Large</label>
-                            <input type ="radio" id="largepizza" value="largepizza" name="pizza">
-                            <label for= "mediumpizza">Medium</label>
-                            <input type ="radio" id="mediumpizza" value="mediumpizza" name="pizza">
+                            <input type ="radio" id="largepizza" class = "optionals"value="400" name="pizza">
+                           <!-- <label for= "mediumpizza">Medium</label>
+                            <input type ="radio" id="mediumpizza" class = "optionals"value="mediumpizza" name="pizza"> -->
                             <label for= "smallpizza">Small</label>
-                            <input type ="radio" id="smallpizza" value="smallpizza" name="pizza"> 
+                            <input type ="radio" id="smallpizza" class="optionals" value="-350" name="pizza"> 
                         </form>                 
                         
                         <div class = "extrapizzaprices">
@@ -260,17 +262,17 @@
                         <div>
                             <form>
                                 <label for = "extracheese">Extra Cheese</label>
-                                <input type ="checkbox" id="extracheese" value="extracheese" name="extracheese">
+                                <input type ="checkbox" class= "optionals" id="mushrooms" value="300" name="extracheese">
                                 <label for = "bacon">Bacon</label>
-                                <input type ="checkbox" id="bacon" value="bacon" name="bacon">
+                                <input type ="checkbox"  class = "optionals" id="bacon" value="300" name="bacon">
                                 <label for = "mushrooms">Mushrooms</label>
-                                <input type ="checkbox" id="mushrooms" value="mushrooms" name="mushrooms">
+                                <input type ="checkbox"  class = "optionals" id="mushrooms" value="300" name="mushrooms">
                                 <label for = "sundriedtomatoes">Sun-Dried Tomatoes</label>
-                                <input type ="checkbox" id="sundriedtomatoes" value="sundriedtomatoes" name="sundriedtomatoes">
+                                <input type ="checkbox" class = "optionals" id="sundriedtomatoes" value="300" name="sundriedtomatoes">
                                 <label for = "sausages">Sausages</label>
-                                <input type ="checkbox" id="sausages" value="sausages" name="sausages">
+                                <input type ="checkbox" class = "optionals" id="sausages" value="300" name="sausages">
                                 <label for = "vegancheese">Extra Vegan Cheese</label>
-                                <input type ="checkbox" id="vegancheese" value="vegancheese" name="vegancheese">
+                                <input type ="checkbox" class = "optionals" id="vegancheese" value="300" name="vegancheese">
                             </form>                                           
                         </div>                                                     
                     </div>          
@@ -282,7 +284,7 @@
         <div class="p-order">
             <div class="gettotal">
                 <ul>
-                    <li>Total:<span> Kshs. 4,000.00</span></li>
+                    <li>Total:<span> </span></li>
                 </ul>
 
             </div>
