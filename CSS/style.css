@@ -55,13 +55,19 @@
     color: #39B4B7;
     
 }
+
+.pizzacheckbox input{
+    margin: 30px;
+}
+
 #pizzachoiceoptions{
-    border: .5px black solid;
+    border: 0.5px solid black;
     padding: 30px;
     margin-top: 30px;
 }
 
 .pizzasize{
+    display: none;
     text-align: center; 
     align-content: center;
 }
@@ -74,12 +80,6 @@
     width: 200px;
 }
 
-table{
-    border: black 1px solid;
-    margin-top: 15px;
-    margin-left: 250px;
-    padding: 20px;
-}
 
 .getsubtotal ul li{
     margin-left: 500px;

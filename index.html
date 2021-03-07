@@ -105,11 +105,35 @@
 
         </div>
         </div>
-        <div>
-        <div class ="col-md-12">
+
+        <div class = "row">
+            <div class ="col-md-6">
+                <p><strong>Choose Your Pizza below;</strong></p>
+                <form class = "pizzacheckbox">
+                    <label for = "beefbonanzapizza">Beef Bonanza Pizza</label>
+                    <input type ="checkbox" id="beefbonanzapizza" name=" ">
+                   <!-- Qty:<input type="number" class="itemquantity" min="0" max=""> -->
+                    <label for = "boerewors">Boerewors Pizza</label>
+                    <input type ="checkbox" id="boerewors" name=" ">
+                    <label for = "c-mushrooms">Chicken Mushroom Pizza</label>
+                    <input type ="checkbox" id="c-mushrooms" name=" ">
+                    <label for = "c-tikka">Chicken Tikka Pizza</label>
+                    <input type ="checkbox" id="c-tikka" name=" ">
+                    <label for = "hambeef">Ham and Beef Pizza</label>
+                    <input type ="checkbox" id="hambeef" name=" ">
+                    <label for = "hawaiian">Hawaiian</label>
+                    <input type ="checkbox" id="hawaiian" name=" ">
+                    <label for = "neopolitan">Neopolitan</label>
+                    <input type ="checkbox" id="neopolitan" name=" ">
+                    <label for = "hawaiian">Vegeterian</label>
+                    <input type ="checkbox" id="vegeterian" name=" ">
+                </form>      
+
+            </div>
+        <div class ="col-md-6">
             <div class = "pizzasize">
                 <p>We offer our pizzas in three sizes as below;</p>
-                <form>
+                <form onsubmit="calculateThisPrice()">
                     <label for= "largepizza">Large</label>                    
                     <input type ="radio" id="largepizza" class = "optionalsize" value="1900" name="pizza"> 
                     <p>Kshs.<span class = "pizza-price">1,900.00</span></p>                   
@@ -284,7 +308,7 @@
         </div>
         <div id="deliverydetails">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-7">
                     <div class ="deliveryoptions">
                         <form>
                         <label for ="delivery">Delivery</label>
@@ -307,7 +331,7 @@
 
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <div class ="deliveryprices">
                         <form>
                             <label for ="firstdistance">Less than 10km radius</label>
@@ -332,17 +356,13 @@
         </div>
         <div id ="checkout">
             <div class ="checkoutbutton">
-                <button class ="btn btn-danger">Checkout</button>
+                <button class ="btn btn-danger" type="submit">Checkout</button>
             </div>
             <p id = "getfinalprice">
                 <span>Your Total Price is:</span>
             </p>
 
         </div>
-
-        <footer>
-            <p>All Rights Reserved: 2021</p>
-        </footer>
      
     </div>
     <footer>

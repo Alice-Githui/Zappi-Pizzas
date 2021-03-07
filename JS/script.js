@@ -35,6 +35,12 @@ NewPizzaOrder.prototype.pizzaOrders = function(){return this.pizzaType + " " + t
 
 
 //allow the client to choose their pizza size and get price 
+
+$(".pizzacheckbox").click(function(){
+    $(".pizzasize").show()
+})
+
+
 $(".optionalsize").click(function(){
     var getSubTotal = 0;
     $('.optionalsize:checked').each(function(){
@@ -44,9 +50,12 @@ $(".optionalsize").click(function(){
 })
 
 //calculate the total prices based on the number of pizzas chosen
+/*function calculateThisPrice(){
+    var price = parseInt(getElementByClass("pizza-price").val())
+    var quantity = getElementByClass("itemquantity").val();
 
-
-
+    document.getElementById("getfirstsubtotal").val() = (price*quantity)
+}  */
 
 //calculate the total price of the additional toppings chosen
 
@@ -99,6 +108,6 @@ $(".d-distance").click(function(){
 
 //The client is able to get their total price on checkout
 
-$(".btn btn-danger").click(function(){
+$(".btn btn-danger").submit(function(){
    document.getElementById("getfinalprice").innerHTML = (getSubTotal + getTotal + getDeliveryPrices)
 })
