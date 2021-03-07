@@ -1,7 +1,7 @@
 //business logic
-//the client chooses their pizza of choice, crust type, size of pizza, choice of toppings and if they are to be delivered or not 
+//the total price of the pizza will be based on price of pizza, price of toppings and cost of delivery 
 
-/*function newPizzaOrder(pizzaType, pizzaSize, crustType){
+/*function newPizzaOrder(pizzatype, pizzaSize, crustType){
     this.pizzaType = pizzaType;
     this.pizzaSize = pizzaSize;
     this.crustType = crustType;
@@ -33,33 +33,29 @@ console.log(newOrder)
 NewPizzaOrder.prototype.pizzaOrders = function(){return this.pizzaType + " " + this.pizzaOptions}
 //user-interface */
 
-$(".table").click(function(event){
-    event.preventDefault();
 
-    let inputtedpizzaType = $("input.input").val()
-    
+//allow the client to choose their pizza size and get price 
+$(".optionalsize").click(function(){
+    var getSubTotal = 0;
+    $('.optionalsize:checked').each(function(){
+      getSubTotal += parseInt($(this).val())
+    })
+    $("#getfirstsubtotal").html('Kshs.' + getSubTotal)
 })
-//function that calculates the price of medium pizzas depending on the number pizzas
+
+//calculate the total prices based on the number of pizzas chosen
 
 
 
-
-//console.log(subTotalPrice) 
-
-
-//allow the client to customize their pizza depending on the pizza chosen
-$(".pizza-type").click(function(){
-    $("#pizzachoiceoptions").show() 
-})
 
 //calculate the total price of the additional toppings chosen
 
 $(".optionals").click(function(){
-    var gettotal = 0;
+    var getTotal = 0;
     $('.optionals:checked').each(function(){
-        gettotal += parseInt($(this).val())
+        getTotal += parseInt($(this).val())
     })
-    $(".gettotal").html('Kshs.' + gettotal)
+    $(".gettotal").html('Kshs.' + getTotal)
 })
 
 
@@ -89,4 +85,20 @@ $("#seconddistance").click(function(event){
 
 $("#thirddistance").click(function(event){
     $("#deliverycosts3").toggle()
+})
+
+//Client is able to add their delivery costs to their location
+
+$(".d-distance").click(function(){
+    var getDeliveryPrices= 0;
+    $('.d-distance:checked').each(function(){
+      getDeliveryPrices += parseInt($(this).val())
+    })
+    $("#getdeliverycosts").html('Kshs.' + getDeliveryPrices)
+})
+
+//The client is able to get their total price on checkout
+
+$(".btn btn-danger").click(function(){
+   document.getElementById("getfinalprice").innerHTML = (getSubTotal + getTotal + getDeliveryPrices)
 })

@@ -44,20 +44,14 @@
                 <div class= "col-md-3">
                     <div class="beefbonanzapizza">
                         <img src="Images/Types of pizzas/beefbonanza.webp" alt="image of a pizza sliced in the middle into eight slices">
-                        <p><span class = "pizza-type">Beef Bonanza Pizza</span></p> 
-                        Qty:<input type="number" class="itemquantity" min="0" max="">
-                        <p><span class="pizzaprice">1,300.00</span></p>
-                        <input type="button" onclick="javascript:calculateText();" value="add to cart" />    
+                        <p><span class = "pizza-type">Beef Bonanza Pizza</span></p>     
                     </div>
-
                 </div>
 
                 <div class= "col-md-3">
                     <div class="boerewors">
                         <img src="Images/Types of pizzas/boerewors.webp" alt="image of a pizza with boerewors topping">
                         <p><span class = "pizza-type">Boerewors Pizza</span></p>
-                        Qty:<input type="number" class="input" min="0" max="">
-                        <p><span class="pizzaprice">Kshs. 1,400.00</span></p>
                     </div>
 
                 </div>
@@ -66,8 +60,6 @@
                     <div class="c-mushroom">
                         <img src="Images/Types of pizzas/chickenmushroom.webp" alt="image of a pizza with mushroom topping">
                         <p><span class = "pizza-type">Chicken Mushroom</span></p>
-                        Qty:<input type="number" class="input" min="0" max="">
-                        <p><span class="pizzaprice">Kshs. 1,450.00</span></p>
                     </div>
 
                 </div>
@@ -76,8 +68,6 @@
                     <div class="ctikka">
                         <img src="Images/Types of pizzas/ctikka.jpeg" alt="image of a pizza">
                         <p><span class = "pizza-type">Chicken Tikka</span></p>
-                        Qty:<input type="number" class="input" min="0" max="">
-                       <p><span class="pizzaprice">Kshs. 1,300.00</span></p>
                     </div>
                 </div>                
             </div>
@@ -90,35 +80,52 @@
                     <div class="hambeef">
                         <img src="Images/Types of pizzas/hambeef.jpg" alt="image of a pizza with beef toppings">
                         <p><span class = "pizza-type">Ham & Beef</span></p>
-                        Qty:<input type="number" class="input" min="0" max="">
-                        <p><span class="pizzaprice">Kshs. 1,290.00</span></p>
                     </div>
                 </div>
                 <div class= "col-md-3">
                     <div class="hawaiaan">
                         <img src="Images/Types of pizzas/hawaiian.jpg" alt="image of a pizza with pineapple toppings">
                         <p><span class = "pizza-type">Hawaiian</span></p>
-                        Qty:<input type="number" class="input" min="0" max="">
-                        <p><span class="pizzaprice">Kshs. 1,350.00</span></p>
                     </div>
                 </div>
                 <div class= "col-md-3">
                     <div class="neopolitan">
                         <img src="Images/Types of pizzas/neopolitan.jpg" alt="image of a pizza with vegetable and meat toppings">
                         <p><span class = "pizza-type">Neopolitan</span></p>
-                        Qty:<input type="number" class="input" min="0" max="">
-                        <p><span class="pizzaprice">Kshs. 1,500.00</span></p>
                     </div>
                 </div>
                 <div class= "col-md-3">
                     <div class="vegetarian">
                         <img src="Images/Types of pizzas/vegeterian.jpg" alt="image of a pizza with vegetable toppings">
                         <p><span class = "pizza-type">Vegeterian</span></p>
-                        Qty:<input type="number" class="input" min="0" max="">
-                        <p><span class="pizzaprice">Kshs. 1,500.00</span></p>
                     </div>
                 </div>
 
+            </div>
+
+        </div>
+        </div>
+        <div>
+        <div class ="col-md-12">
+            <div class = "pizzasize">
+                <p>We offer our pizzas in three sizes as below;</p>
+                <form>
+                    <label for= "largepizza">Large</label>                    
+                    <input type ="radio" id="largepizza" class = "optionalsize" value="1900" name="pizza"> 
+                    <p>Kshs.<span class = "pizza-price">1,900.00</span></p>                   
+                    Qty:<input type="number" class="itemquantity" min="0" max="">
+                    <br>
+                    <label for= "mediumpizza">Medium</label>
+                    <input type ="radio" id="mediumpizza" class = "optionalsize" value="1500" name="pizza"> 
+                    <p>Kshs.<span class = "pizza-price">1,500.00</span></p>
+                    Qty:<input type="number" class="itemquantity" min="0" max="">
+                    <br>
+                    <label for= "smallpizza">Small</label>
+                    <input type ="radio" id="smallpizza" class="optionalsize" value="1200" name="pizza"> 
+                    <p>Kshs.<span class = "pizza-price">1,200.00</span></p>
+                    Qty:<input type="number" class="itemquantity" min="0" max="">
+                </form>                 
+                
             </div>
 
         </div>
@@ -206,14 +213,14 @@
         </div>  -->
         <div class="getsubtotal">
             <ul>
-                <li>Sub-Total:<span id ="getfirstsubtotal"> </span></li>
+                <li>Sub-Total 1:<span id ="getfirstsubtotal"> </span></li>
             </ul>
 
         </div>    
 
         <div id = "pizzachoiceoptions">
             <div class ="row">
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class = "crusts">
                         <p>We offer our pizza crusts in three types as below;</p>
                         <form>
@@ -233,48 +240,30 @@
                     </div>
 
                 </div>
-                <div class ="col-md-4">
-                    <div class = "pizzasize">
-                        <p>We offer our pizzas in three sizes as below;</p>
-                        <form>
-                            <label for= "largepizza">Large</label>
-                            <input type ="radio" id="largepizza" class = "optionals"value="400" name="pizza">
-                           <!-- <label for= "mediumpizza">Medium</label>
-                            <input type ="radio" id="mediumpizza" class = "optionals"value="mediumpizza" name="pizza"> -->
-                            <label for= "smallpizza">Small</label>
-                            <input type ="radio" id="smallpizza" class="optionals" value="-350" name="pizza"> 
-                        </form>                 
-                        
-                        <div class = "extrapizzaprices">
-                            <p>A large pizza will cost an extra <strong><span class = "largepizzaprice">Kshs. 400</span></strong> more than the medium-sized pizza</p>
-                            <p>A small pizza will cost <strong><span class ="smallpizzaprice">Kshs. 350</span></strong> less than the medium-sized pizza</p>
-                        </div>
-                        
-                    </div>
-
-                </div>
-                <div class="col-md-4">
+                
+                <div class="col-md-6">
                     <div class="toppings">
-                        <div class ="extratoppingprices">
-                            <p>All toppings are <span>Kshs.300</span> extra.</p>    
-                        </div>
+                        
                         <p>We offer our pizza toppings in the varieties below;</p>
                         <div>
                             <form>
                                 <label for = "extracheese">Extra Cheese</label>
-                                <input type ="checkbox" class= "optionals" id="mushrooms" value="300" name="extracheese">
+                                <input type ="checkbox" class= "optionals" id="mushrooms" value="200" name="extracheese">
                                 <label for = "bacon">Bacon</label>
-                                <input type ="checkbox"  class = "optionals" id="bacon" value="300" name="bacon">
+                                <input type ="checkbox"  class = "optionals" id="bacon" value="250" name="bacon">
                                 <label for = "mushrooms">Mushrooms</label>
-                                <input type ="checkbox"  class = "optionals" id="mushrooms" value="300" name="mushrooms">
+                                <input type ="checkbox"  class = "optionals" id="mushrooms" value="400" name="mushrooms">
                                 <label for = "sundriedtomatoes">Sun-Dried Tomatoes</label>
-                                <input type ="checkbox" class = "optionals" id="sundriedtomatoes" value="300" name="sundriedtomatoes">
+                                <input type ="checkbox" class = "optionals" id="sundriedtomatoes" value="400" name="sundriedtomatoes">
                                 <label for = "sausages">Sausages</label>
                                 <input type ="checkbox" class = "optionals" id="sausages" value="300" name="sausages">
                                 <label for = "vegancheese">Extra Vegan Cheese</label>
-                                <input type ="checkbox" class = "optionals" id="vegancheese" value="300" name="vegancheese">
+                                <input type ="checkbox" class = "optionals" id="vegancheese" value="500" name="vegancheese">
                             </form>                                           
-                        </div>                                                     
+                        </div>  
+                        <div class ="extratoppingprices">
+                            <p><em>The price of our toppings vary.</em></p>    
+                        </div>                                                   
                     </div>          
                 </div>
 
@@ -284,7 +273,7 @@
         <div class="p-order">
             <div class="gettotal">
                 <ul>
-                    <li>Total:<span> </span></li>
+                    <li>Sub-Total 2:<span> </span></li>
                 </ul>
 
             </div>
@@ -322,30 +311,43 @@
                     <div class ="deliveryprices">
                         <form>
                             <label for ="firstdistance">Less than 10km radius</label>
-                            <input type="radio" id= "firstdistance" value="firstdistance" name ="distance" required>
+                            <input type="radio" class= "d-distance" id= "firstdistance" value="250" name ="distance" required>
                             <span id ="deliverycosts1">Kshs. 250</span>
                             <label for ="seconddistance">Over 10km - 15km radius</label>
-                            <input type="radio" id= "seconddistance" value="seconddistance" name="distance" required>
+                            <input type="radio" class= "d-distance" id= "seconddistance" value="300" name="distance" required>
                             <span id = "deliverycosts2">Kshs. 300</span>
                             <label for ="thirddistance">Over 15km radius</label>
-                            <input type="radio" id= "thirddistance" value="thirddistance" name="distance" required>
+                            <input type="radio" class= "d-distance" id= "thirddistance" value="450" name="distance" required>
                             <span id = "deliverycosts3">Kshs. 450</span>
                         </form>
                        
             
-                    </div>       
+                    </div>  
+                    <div class="getdeliverycosts">
+                        <p>Delivery Fees: <span id ="getdeliverycosts"></span>
+                        </p>
+                    </div>         
                 </div>
             </div>
         </div>
         <div id ="checkout">
             <div class ="checkoutbutton">
                 <button class ="btn btn-danger">Checkout</button>
-
             </div>
+            <p id = "getfinalprice">
+                <span>Your Total Price is:</span>
+            </p>
 
         </div>
+
+        <footer>
+            <p>All Rights Reserved: 2021</p>
+        </footer>
      
     </div>
+    <footer>
+        <p>All Rights Reserved: 2021</p>
+    </footer>
     
     <script src = "https://code.jquery.com/jquery-3.5.1.js"></script> <!--jQuery CDN link linked at the bottom of the page so it is read after the rest of the page loads-->
     <script src="JS/script.js"></script>    

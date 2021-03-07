@@ -48,10 +48,30 @@
 .note p{
     background-color: #39B4B7;
 }
+
+.pizza-varieties p:hover{
+    font-size: 18px;
+    text-decoration: underline;
+    color: #39B4B7;
+    
+}
 #pizzachoiceoptions{
     border: .5px black solid;
     padding: 30px;
     margin-top: 30px;
+}
+
+.pizzasize{
+    text-align: center; 
+    align-content: center;
+}
+
+.pizzasize p{
+    font-size: 16px;
+}
+
+.itemquantity{
+    width: 200px;
 }
 
 table{
@@ -115,11 +135,16 @@ table{
     display:none;
 }
 
-/*make the type of the price of the pizza clickable */
+.getdeliverycosts p{
+    background-color: #39B4B7;
+    font-weight: bold;
+}
 
+/*make the type of the price of the pizza clickable */
+/*
 #pizzachoiceoptions{
     display: none;
-} 
+} */
 
 #deliverydetails{
     /*border: 1px solid black; */
@@ -142,4 +167,10 @@ table{
 .deliveryprices input{
     margin: 10px;
     padding:10px;
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+
 }
