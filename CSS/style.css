@@ -125,18 +125,16 @@
 .checkdeliverylocation{
     display: none;
 }
-#checkout{
-    display: flex;
+
+#basket{
+    width: 100px;
+    text-align: center;
+    margin-left: 500px;
 }
 
-#basket input{
-    width: 400px;
-    margin-left: 80px;
-    
-}
 
 #checkout button{
-    margin-left: 50px;
+    margin-left: 500px;
     margin-top: 10px;
     margin-bottom: 30px;
 }

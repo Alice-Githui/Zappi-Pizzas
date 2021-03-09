@@ -106,6 +106,8 @@ $(".d-distance").click(function getTotalThree(){
     $("#getdeliverycosts").html('Kshs.' + getDeliveryPrices)
 })
 
+
+
 //The client is able to get their total price on checkout
 
 function getAllCosts(){
@@ -115,3 +117,28 @@ function getAllCosts(){
 
 } 
 
+//business logic
+//the total price of the pizza will be based on price of pizza, price of toppings and cost of delivery 
+
+function PizzaOrder(pizzaType){
+    this.pizzaType = pizzaType;
+    this.pizzaOptions = [];
+}
+
+function PizzaOption(pizzaSize, crustType, choiceToppings){
+    this.pizzaSize = pizzaSize;
+    this.crustType = crustType;
+    this.choiceToppings = choiceToppings;
+}
+
+NewPizzaOrder.prototype.pizzaOrders = function(){return this.pizzaType + " " + this.pizzaOptions}
+
+$('#placeorder').click(function(event){
+    event.preventDefault();
+    let inputtedPizzaType = $(".pizzacheckbox input").val()
+    let inputtedCrustType = $(".crusts input").val()
+    let inputtedChoiceToppings = $("form.optionals").val()
+
+    let newPizzaOrder = new PizzaOrder(inputtedPizzaType, inputtedCrustType, inputtedChoiceToppings);
+    $("ul#orderbasket").append("<span class = 'order'>" +newPizzaOrder.pizzaOrders() + "</span>")
+}); 
