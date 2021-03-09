@@ -25,18 +25,7 @@ $('#placeorder').click(function(event){
 }); */
 
 
-//to check if our constructors are functioning
-/*
-let newOrder = new NewPizzaOrder("Neopolitan")
-console.log(newOrder) 
-
-let chosenoptions = new PizzaOption("large" , "thin" , "bacon")
-console.log(chosenoptions)
-
-newOrder.pizzaOptions.push(chosenoptions);
-console.log(newOrder)
-
-NewPizzaOrder.prototype.pizzaOrders = function(){return this.pizzaType + " " + this.pizzaOptions}
+//NewPizzaOrder.prototype.pizzaOrders = function(){return this.pizzaType + " " + this.pizzaOptions}
 //user-interface */
 
 
@@ -46,10 +35,20 @@ $(".pizzacheckbox").click(function(){
     $(".pizzasize").show()
 })
 
+
+
+/*function getTotalOne(){
+   var priceOfPizza = parseInt(getElementByClass("pizza-price").value)
+   var numberOfPizzas = parseInt(getElementByClass("itemquantity").value);
+
+   document.getElementById('getfirstsubtotal').innerHTML = (priceOfPizza * numberOfPizzas);
+} */
+
+
 $(".optionalsize").click(function getTotalOne(){
     var getSubTotal = 0;
     $('.optionalsize:checked').each(function(){
-      getSubTotal = parseInt($(this).val())
+      getSubTotal = parseInt($(this).val()) 
     })
     $("#getfirstsubtotal").html('Kshs.' + getSubTotal)
 }) 
@@ -140,5 +139,5 @@ $('#placeorder').click(function(event){
     let inputtedChoiceToppings = $("form.optionals").val()
 
     let newPizzaOrder = new PizzaOrder(inputtedPizzaType, inputtedCrustType, inputtedChoiceToppings);
-    $("ul#orderbasket").append("<span class = 'order'>" +newPizzaOrder.pizzaOrders() + "</span>")
+    $("ul#orderbasket").append("<span class = 'order'>" +newPizzaOrder.PizzaOrders() + "</span>")
 }); 
