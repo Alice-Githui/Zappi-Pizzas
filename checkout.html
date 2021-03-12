@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zappi Pizzas</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet"> <!--embedded google font to style the page-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> <!--Bootsrap CDN link-->
+    <link href="CSS/style.css" rel="stylesheet">
+</head>
+<body>
+          
+        <div class ="navbar">
+            <nav>                
+                <ul>
+                    <li><a href ="#desc">About</a> </li>
+                    <li><a href="#buildyourpizza">Build Your Pizza</a></li>
+                    <li><a href="#deliverydetails">Delivery</a> </li>
+                    <li><a href ="checkout.html">Checkout</a></li>
+                </ul> 
+                       <!-- <img src="Images/navbarbackground.webp" alt ="cartoon of a man putting pizza in the furnace burner">    -->                           
+            </nav>
+        </div>
+         
+        <div id ="desc">
+            <img src="Images/descimage.jpg" alt="the words pizza love at first sight shaped like a pizza slice">
+            <p><em><strong>We add just a little magic to your pizzas</strong></em>
+                <br>
+                With over a combined 10 years experience in the culinary field, Zappi Pizza is a family-owned business whose aim is to bring the best pizzas to your tables.
+                <br>
+                We understand that your needs are constantly changing and are continuously keen to offer a variety of pizza options that will meet the needs of you and your loved ones.
+                <br>
+                <span>Order Your Pizza Today!!!</span>
+            </p>
+
+        </div>
+        <div class="container">
+            <div class= "note">
+                <p><strong>Please Note that the prices below are for our standard medium sized pizzas;</strong></p>
+            </div>
+        </div>
+        <div class="container">
+            <div id="buildyourpizza">
+                <div class = "pizza-varieties">
+                    <div class= "row">
+                        <div class= "col-md-3">
+                            <div class="beefbonanzapizza">
+                                <img src="Images/Types of pizzas/beefbonanza.webp" alt="image of a pizza sliced in the middle into eight slices">
+                                <p><span class = "pizza-type">Beef Bonanza Pizza</span></p>     
+                            </div>
+                        </div>
+        
+                        <div class= "col-md-3">
+                            <div class="boerewors">
+                                <img src="Images/Types of pizzas/boerewors.webp" alt="image of a pizza with boerewors topping">
+                                <p><span class = "pizza-type">Boerewors Pizza</span></p>
+                            </div>
+        
+                        </div>
+        
+                        <div class= "col-md-3">
+                            <div class="c-mushroom">
+                                <img src="Images/Types of pizzas/chickenmushroom.webp" alt="image of a pizza with mushroom topping">
+                                <p><span class = "pizza-type">Chicken Mushroom</span></p>
+                            </div>
+        
+                        </div>
+                        <div class= "col-md-3">
+                            <div class="ctikka">
+                                <img src="Images/Types of pizzas/ctikka.jpeg" alt="image of a pizza">
+                                <p><span class = "pizza-type">Chicken Tikka</span></p>
+                            </div>
+                        </div>                
+                    </div>
+        
+                </div>
+                <div class = "pizza-varieties">
+                    <div class= "row">
+                        <div class= "col-md-3">
+                            <div class="hambeef">
+                                <img src="Images/Types of pizzas/hambeef.jpg" alt="image of a pizza with beef toppings">
+                                <p><span class = "pizza-type">Ham & Beef</span></p>
+                            </div>
+                        </div>
+                        <div class= "col-md-3">
+                            <div class="hawaiaan">
+                                <img src="Images/Types of pizzas/hawaiian.jpg" alt="image of a pizza with pineapple toppings">
+                                <p><span class = "pizza-type">Hawaiian</span></p>
+                            </div>
+                        </div>
+                        <div class= "col-md-3">
+                            <div class="neopolitan">
+                                <img src="Images/Types of pizzas/neopolitan.jpg" alt="image of a pizza with vegetable and meat toppings">
+                                <p><span class = "pizza-type">Neopolitan</span></p>
+                            </div>
+                        </div>
+                        <div class= "col-md-3">
+                            <div class="vegetarian">
+                                <img src="Images/Types of pizzas/vegeterian.jpg" alt="image of a pizza with vegetable toppings">
+                                <p><span class = "pizza-type">Vegeterian</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class = "container">
+            <div id ="choicepizza">
+                <div class = "row">
+                    <div class ="col-md-6">
+                        <p><strong>Choose Your Pizza below;</strong></p>
+                        <form id = "pizzacheckbox" class="form-group">
+                            <select class="form-control">
+                                <option value= "beefbonanzapizza" >Beef Bonanza Pizza</option>
+                                <option value="boerewors">Boerewors Pizza</option>
+                                <option value = "chicken mushroom"> Chicken Mushroom</option>
+                                <option value = "chicken-tikka pizza">Chicken Tikka Pizza</option>
+                                <option value = "ham and beef">Ham and Beef Pizza</option>
+                                <option value = "hawaiian">Hawaiian</option>
+                                <option value = "neopolitan">Neopolitan</option>
+                                <option value="vegeterian">Vegeterian</option>
+                            </select>
+                        </form> 
+                        <div class = "pizzasize">
+                            <p>We offer our pizzas in three sizes as below;</p>
+                            <form id="pizzasize" class="form-group">
+                                <select class="form-control">
+                                    <option value = 1900>Large @ Kshs. 1900</option>
+                                    <option value = 1500>Medium @ Kshs. 1500</option>
+                                    <option value = 1200>Small @ Kshs. 1200</option>
+                                </select>
+                            </form>                                          
+                        </div>  
+                        <div class = "crusts">
+                            <div>
+                                <p>We offer our pizza crusts in three types as below;</p>
+                                <form class="form-group" id="crust-type">
+                                    <select class="form-control">
+                                        <option value="deepcrust">Deep Crust</option>
+                                        <option value = "glutenfree">Gluten Free</option>
+                                        <option value="thincrust">Thin Crust</option>
+                                    </select>                
+                                </form>
+                            </div>   
+                        </div>
+                        <div class="toppings">                            
+                            <p>We offer our pizza toppings in the varieties below;</p>
+                            <div>
+                                <form class="form-group">
+                                    <select class="form-control">
+                                        <option value = "200">Extra Cheese @ Kshs. 200</option>
+                                        <option value = "200">Bacon @ Kshs. 200</option>
+                                        <option value = "400">Mushrooms @ Kshs. 400</option>
+                                        <option value ="400">Sun-Dried Tomatoes @ Kshs. 400</option>
+                                        <option value = "300">Sausages @ Kshs. 300</option>
+                                        <option value = "500">Extra Vegan Cheese @ Kshs. 500</option>
+                                    </select>
+                                </form>                                           
+                            </div>  
+                            <div class ="extratoppingprices">
+                                <p><em>The price of our toppings vary.</em></p>    
+                            </div>                                                   
+                        </div> 
+                        <div class="p-order">
+                            <div>
+                                <a href="#orderbasket">
+                                    <button type="submit" class= "btn btn-success" id="placeorder">Place Order</button>
+                                </a>
+                            </div>                            
+                            <div>
+                                <a href="#deliverydetails">Proceed to Checkout</a>
+                            </div>
+                        </div>                     
+                    </div>
+                    <div class="col-md-6">
+                        <div id="deliverydetails">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class ="deliveryoptions">
+                                        <form id="deliverydetails">
+                                          <label for ="delivery">Delivery</label>
+                                          <input type="radio" id= "delivery" value="delivery" name="delivery">
+                                          <label for ="pick-up">In-house pick up</label>
+                                          <input type="radio" id= "pick-up" value="pick-up" name="delivery">
+                
+                                        </form>                    
+                            
+                                    </div>   
+                                    <div class = "checkdeliverylocation">
+                                       <form>
+                                           <label for="enterlocation">Enter Your Location</label>
+                                           <input type="text" id="enterlocation" value="">
+                
+                                       <button type="submit" class="submit">Enter</button>
+                                    
+                                    </div> 
+                                    <div class ="deliveryprices">
+                                        <form class = "form-group">
+                                            <select class="form-control">
+                                                <option value = "250">Within 10km radius @ Kshs. 250</option>
+                                                <option value="300">Over 10km-15km radius @ Kshs. 300</option>
+                                                <option value = "450">Over 15km @ Kshs. 450</option>
+                                            </select>
+                                        </form>                     
+                                    </div>  
+                                    <div class="getdeliverycosts">
+                                        <p>Delivery Fees: <span id ="getdeliverycosts"></span>
+                                        </p>
+                                    </div>                 
+                
+                                </div>
+                                 <div id ="checkout">
+                                        <div id ="basket">
+                                            <p id= "orderbasket"></p>
+                                        </div>
+                                        <br>
+                                        <table class="content-table">
+                                            <thead>
+                                                <tr>
+                                                    <td>Pizza Type</td>
+                                                    <td>Price of Pizza</td>
+                                                    <td>Price of Toppings</td>
+                                                    <td>Delivery Fees</td>
+                                                    <td>Total Costs</td>                        
+                                                </tr>            
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                </tr>                               
+                                
+                                            </tbody>
+                                        </table> 
+                                        <div class="container">
+                                            <div class ="checkoutbutton">
+                                                <a href = "#desc">
+                                                    <button class ="btn btn-danger" type="submit">Checkout</button>
+                                                </a>                
+                                            </div>
+                                            <p><span id = "getfinalprice"></span>  </p>
+                                        </div>                  
+                                    </div>                    
+                                </div>
+                            </div>
+                        </div>      
+                        
+                    </div>    
+                </div> 
+            </div>
+        </div>        
+    <footer class="footer">
+        <div class ="navbar">
+            <nav>                
+                <ul>
+                    <li><a href ="#desc">About</a> </li>
+                    <li><a href="#buildyourpizza">Build Your Pizza</a></li>
+                    <li><a href="#deliverydetails">Delivery</a> </li>
+                    <li><a href ="checkout.html">Checkout</a></li>
+                </ul>                           
+            </nav>
+        </div>
+    </footer>                                      
+    <script src="JS/script.js"></script>
+    <script src = "https://code.jquery.com/jquery-3.5.1.js"></script>
+</body>
+</html>
