@@ -1,15 +1,19 @@
-UC--Connect
+Zippa Pizzas
 
 This project was created by Alice Githui.
 
 ## Description
-This is an application where the users can book their bus tickets (in advance) for longer distance journies. This will allow them to plan for their journeys much more efficiently and save on the time that is usually wasted on bus stops. 
+This is an application where the clients for Zappi Pizzas can order their pizzas online and customize them to their liking. The customer is also able to choose the option of pick-up or delivery to their location. For delivery to their location, there is an added cost of delivery added to the total costs
 
 ## Technologies Used
 
 -HTML
 -CSS
 -JavaScript/jQuery
+
+### Features to add
+-The option of ordering more than one type of pizza at one paticular time
+-The option of adding or removing an ordered pizza from their basket
 
 ## Installation and Set-up
 
