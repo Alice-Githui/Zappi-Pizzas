@@ -1,10 +1,9 @@
-Zappi Pizzas
+UC--Connect
 
 This project was created by Alice Githui.
 
 ## Description
-This is a website for Zappi Pizzas, a family-owned business whose aim is to bring the best pizzas to their clients' tables.
-The website allows the client to choose the pizza of their choice and customize it to their liking. They also have the option of inhouse pick-up or delivery. If the pizzas are to be delivered, the client will have their delivery costs computed and added to their total costs.
+This is an application where the users can book their bus tickets (in advance) for longer distance journies. This will allow them to plan for their journeys much more efficiently and save on the time that is usually wasted on bus stops. 
 
 ## Technologies Used
 

@@ -17,7 +17,6 @@
                 <ul>
                     <li><a href ="#desc">About</a> </li>
                     <li><a href="#buildyourpizza">Build Your Pizza</a></li>
-                    <li><a href="#deliverydetails">Delivery</a> </li>
                     <li><a href ="checkout.html">Checkout</a></li>
                 </ul> 
                        <!-- <img src="Images/navbarbackground.webp" alt ="cartoon of a man putting pizza in the furnace burner">    -->                           
@@ -111,8 +110,8 @@
                 <div class = "row">
                     <div class ="col-md-6">
                         <p><strong>Choose Your Pizza below;</strong></p>
-                        <form id = "pizzacheckbox" class="form-group">
-                            <select class="form-control">
+                        <form class="form-group">
+                            <select class="form-control" id = "pizzacheckbox" >
                                 <option value= "beefbonanzapizza" >Beef Bonanza Pizza</option>
                                 <option value="boerewors">Boerewors Pizza</option>
                                 <option value = "chicken mushroom"> Chicken Mushroom</option>
@@ -125,8 +124,8 @@
                         </form> 
                         <div class = "pizzasize">
                             <p>We offer our pizzas in three sizes as below;</p>
-                            <form id="pizzasize" class="form-group">
-                                <select class="form-control">
+                            <form class="form-group">
+                                <select class="form-control" id="pizzasize">
                                     <option value = 1900>Large @ Kshs. 1900</option>
                                     <option value = 1500>Medium @ Kshs. 1500</option>
                                     <option value = 1200>Small @ Kshs. 1200</option>
@@ -136,11 +135,11 @@
                         <div class = "crusts">
                             <div>
                                 <p>We offer our pizza crusts in three types as below;</p>
-                                <form class="form-group" id="crust-type">
-                                    <select class="form-control">
-                                        <option value="deepcrust">Deep Crust</option>
-                                        <option value = "glutenfree">Gluten Free</option>
-                                        <option value="thincrust">Thin Crust</option>
+                                <form class="form-group" >
+                                    <select class="form-control" id="crust-type">
+                                        <option value="300">Deep Crust @ an extra Kshs. 300</option>
+                                        <option value = "400">Gluten Free @ an extra Kshs. 400</option>
+                                        <option value="0">Thin Crust @normal prices</option>
                                     </select>                
                                 </form>
                             </div>   
@@ -149,7 +148,7 @@
                             <p>We offer our pizza toppings in the varieties below;</p>
                             <div>
                                 <form class="form-group">
-                                    <select class="form-control">
+                                    <select class="form-control" id="pizzatoppings">
                                         <option value = "200">Extra Cheese @ Kshs. 200</option>
                                         <option value = "200">Bacon @ Kshs. 200</option>
                                         <option value = "400">Mushrooms @ Kshs. 400</option>
@@ -161,8 +160,15 @@
                             </div>  
                             <div class ="extratoppingprices">
                                 <p><em>The price of our toppings vary.</em></p>    
-                            </div>                                                   
+                            </div>   
+                            <div class="form-group">
+                                <form class="pizzano." id="pizzano.">
+                                    <label>How many pizzas should we add?</label>
+                                    <input type="number" id="pizzanumber" class="form-control" placeholder="1" >
+                                </form>
+                            </div>                                                
                         </div> 
+                        <br>
                         <div class="p-order">
                             <div>
                                 <a href="#orderbasket">
@@ -175,7 +181,7 @@
                         </div>                     
                     </div>
                     <div class="col-md-6">
-                        <div id="deliverydetails">
+                        <div id="deliveries">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class ="deliveryoptions">
@@ -197,52 +203,28 @@
                                     
                                     </div> 
                                     <div class ="deliveryprices">
+                                        <div class="getdeliverycosts">
+                                            <p>Delivery Fees: <span id ="getdeliverycosts"></span>
+                                            </p>
+                                        </div>    
                                         <form class = "form-group">
-                                            <select class="form-control">
+                                            <select class="form-control" id ="deliveryprices">
                                                 <option value = "250">Within 10km radius @ Kshs. 250</option>
                                                 <option value="300">Over 10km-15km radius @ Kshs. 300</option>
                                                 <option value = "450">Over 15km @ Kshs. 450</option>
                                             </select>
                                         </form>                     
-                                    </div>  
-                                    <div class="getdeliverycosts">
-                                        <p>Delivery Fees: <span id ="getdeliverycosts"></span>
-                                        </p>
-                                    </div>                 
+                                    </div>              
                 
                                 </div>
                                  <div id ="checkout">
-                                        <div id ="basket">
-                                            <p id= "orderbasket"></p>
+                                        <div id ="basket">Your Basket is as follows:
+                                            <span>0</span>
                                         </div>
-                                        <br>
-                                        <table class="content-table">
-                                            <thead>
-                                                <tr>
-                                                    <td>Pizza Type</td>
-                                                    <td>Price of Pizza</td>
-                                                    <td>Price of Toppings</td>
-                                                    <td>Delivery Fees</td>
-                                                    <td>Total Costs</td>                        
-                                                </tr>            
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td></td>
-                                                </tr>                               
-                                
-                                            </tbody>
-                                        </table> 
                                         <div class="container">
                                             <div class ="checkoutbutton">
-                                                <a href = "#desc">
-                                                    <button class ="btn btn-danger" type="submit">Checkout</button>
+                                                <a href = "#">
+                                                    <button class ="btn btn-danger" type="submit" id="checkoutbutton">Checkout</button>
                                                 </a>                
                                             </div>
                                             <p><span id = "getfinalprice"></span>  </p>
@@ -262,7 +244,6 @@
                 <ul>
                     <li><a href ="#desc">About</a> </li>
                     <li><a href="#buildyourpizza">Build Your Pizza</a></li>
-                    <li><a href="#deliverydetails">Delivery</a> </li>
                     <li><a href ="checkout.html">Checkout</a></li>
                 </ul>                           
             </nav>
