@@ -1,10 +1,9 @@
-UC--Connect
+Zappi Pizzas
 
 This project was created by Alice Githui.
 
 ## Description
-This is an application where the users can book their bus tickets (in advance) for longer distance journies. This will allow them to plan for their journeys much more efficiently and save on the time that is usually wasted on bus stops. 
-
+This is an application for Zappi Pizzas that allows their users to order pizzas online, to their customization with the option of in-house or delivery. On dlivery, their delivery costs are calculated and added to their total costs. 
 ## Technologies Used
 
 -HTML
@@ -18,6 +17,11 @@ To acquire a local copy:
 - Clone the repository
 - Navigate to the parent folder
 - Open the index.html file
+
+### Features to add in the future;
+
+-An order basket where the user can order more than one type of pizza and get their total costs
+-An option for adding or deleting an order pushed to the basket
 
 ## License
 
