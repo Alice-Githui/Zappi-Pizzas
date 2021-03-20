@@ -7,9 +7,27 @@ const pizzaNumbers = document.getElementById('pizzano.')
 const deliveryOption = document.getElementById('deliverydetails')
 const deliveryCosts = document.getElementById('deliveryprices')
 
+const pizzaDetails = document.getElementById('allpizzadetails')
+const payableDeliveryFees = document.getElementById('returned-delivery-costs')
+const totalCostsCharged = document.getElementById('basketdetails')
+
+//values of above variables
+let pizzaVariety = (pizzaType.value);
+let pizzaSizePrice = parseInt(pizzaSize.value);
+let crustTypePrice = parseInt(crustType.value);
+let pizzaToppingsPrice = parseInt(pizzaToppings.value);
+let pizzaPriceOnQuantity = parseInt(pizzaNumbers.value);
+let deliveryCostsPaid = parseInt(deliveryCosts.value)
+
+//console.log(pizzaVariety)
 
 //functions
 function updateTotalCost(){
+
+    
+    pizzaDetails.innerHTML = `You have ordered a ${pizzaVariety}`
+
+    totalCostsCharged.innerHTML = ((pizzaSizePrice + crustTypePrice + pizzaToppingsPrice )* (pizzaPriceOnQuantity)) + (deliveryCostsPaid)
 
 }
 
@@ -27,8 +45,8 @@ document.getElementById('checkoutbutton').addEventListener('click', function(eve
 pizzaType.addEventListener('change', function(event){
     event.preventDefault()
 
-    pizzaPrice = event.target.value
-   // console.log(pizzaPrice)
+    pizzaVariety = event.target.value
+    console.log(pizzaVariety)
 
    updateTotalCost()
 })
