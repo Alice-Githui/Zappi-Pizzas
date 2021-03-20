@@ -1,4 +1,4 @@
-Zippa Pizzas
+Zappi Pizzas
 
 This project was created by Alice Githui.
 
