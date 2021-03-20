@@ -3,7 +3,8 @@ Zappi Pizzas
 This project was created by Alice Githui.
 
 ## Description
-This is an application for Zappi Pizzas that allows their users to order pizzas online, to their customization with the option of in-house or delivery. On dlivery, their delivery costs are calculated and added to their total costs. 
+This is an application where the clients for Zappi Pizzas can order their pizzas online and customize them to their liking. The customer is also able to choose the option of pick-up or delivery to their location. For delivery to their location, there is an added cost of delivery added to the total costs
+ 
 ## Technologies Used
 
 -HTML
