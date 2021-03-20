@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;    
+}
+
 .navbar{
     background-color: #B73C39 ;/* rgb(72, 92, 39); */
     background-size: cover;
@@ -5,11 +15,7 @@
     height: 100px;
 }
 
-/*.navbar img{
-    float: right;
-    width: 200px;
-    height: 100px;
-} */
+
 .navbar ul{
     margin: 0px;
     padding: 0px;
@@ -26,17 +32,52 @@
 
 .navbar a:hover{
     background-color: tomato;
-    font-size: 18px;
 }
+
 
 #desc{
     text-align: center;
     align-items: center;
 }
 
-
 .pizza-varieties img{
     width: 280px;
     height: 220px;
+}
+
+#choicepizza select{
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+#choicepizza p{
+    margin-bottom: 0px;
+}
+
+.extratoppingsprice{
+    margin-top: 5px;
+}
+
+#deliveries{
+    margin-left: 50px
+}
+
+#placeorder{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.proceed{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.deliveryprices{
+    margin-top: 20px;
+}
+
+#checkoutbutton{
+    width: 100%;
 }
 

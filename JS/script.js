@@ -26,7 +26,7 @@ function updateTotalCost(){
 
     
     pizzaDetails.innerHTML = `You have ordered a ${pizzaVariety}`
-
+    payableDeliveryFees.innerHTML = `Your delivery fees are Kshs. ${deliveryCostsPaid}`
     totalCostsCharged.innerHTML = ((pizzaSizePrice + crustTypePrice + pizzaToppingsPrice )* (pizzaPriceOnQuantity)) + (deliveryCostsPaid)
 
 }
@@ -95,3 +95,11 @@ deliveryCosts.addEventListener('change', function(event){
 
     updateTotalCost()
 })
+
+
+document.getElementById('location-button').addEventListener('click', function(event){
+    event.preventDefault()
+
+    event.target.textContent = `We will deliver your order to your location`
+})
+

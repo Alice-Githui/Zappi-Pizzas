@@ -36,10 +36,10 @@
 
         </div>
         <div class="container">
-            <div class= "note">
-                <p><strong>Please Note that the prices below are for our standard medium sized pizzas;</strong></p>
+            <div class = "note" id="note">
+                <p><strong>Our Pizzas are available as below:</strong></p>
             </div>
-        </div>
+
         <div class="container">
             <div id="buildyourpizza">
                 <div class = "pizza-varieties">
@@ -156,11 +156,10 @@
                                         <option value = "300">Sausages @ Kshs. 300</option>
                                         <option value = "500">Extra Vegan Cheese @ Kshs. 500</option>
                                     </select>
-                                </form>                                           
-                            </div>  
-                            <div class ="extratoppingprices">
-                                <p><em>The price of our toppings vary.</em></p>    
-                            </div>   
+                                    <small><em>The price of our toppings vary.</em></small> 
+                                </form>                                                      
+                            </div> 
+                            <br>                            
                             <div class="form-group">
                                 <form class="pizzano." id="pizzano.">
                                     <label>How many pizzas should we add?</label>
@@ -175,7 +174,7 @@
                                     <button type="submit" class= "btn btn-success" id="placeorder">Place Order</button>
                                 </a>
                             </div>                            
-                            <div>
+                            <div class="proceed">
                                 <a href="#deliverydetails">Proceed to Delivery Option</a>
                             </div>
                         </div>                     
@@ -194,12 +193,13 @@
                                         </form>                    
                             
                                     </div>   
-                                    <div class = "checkdeliverylocation">
+                                    <div class = "checkdeliverylocation" class="container form-group">
                                        <form>
-                                           <label for="enterlocation">Enter Your Location</label>
-                                           <input type="text" id="enterlocation" value="">
-                
-                                       <button type="submit" class="submit">Enter</button>
+                                           <label for="enterlocation">Enter Your Location:</label>
+                                           <input type="text" id="enterlocation" value="" class="form-control">
+                                        </form>
+                                        <br>                
+                                       <button type="submit" class="btn btn-success" id="location-button">Enter</button>
                                     
                                     </div> 
                                     <div class ="deliveryprices">
@@ -217,11 +217,12 @@
                                     </div>              
                 
                                 </div>
-                                 <div id ="checkout">
+                                 <div id ="checkout" class="container">
                                         <div id ="basket">Your Basket is as follows:
                                             <span id="allpizzadetails"></span>
+                                            <br>
                                             <span id = "returned-delivery-costs"></span>
-                                            <p>Kshs.<span id="basketdetails">0</span></p>
+                                            <p>Your Total Bill is Kshs.<span id="basketdetails">0</span></p>
                                         </div>
                                         <div class="container">
                                             <div class ="checkoutbutton">
